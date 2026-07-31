@@ -20,5 +20,5 @@ export async function POST(request: NextRequest) {
     description,
   });
 
-  return NextResponse.redirect(new URL("/merci", request.url));
+  return NextResponse.redirect(new URL("/merci", request.url), 303);
 }
